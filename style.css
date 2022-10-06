@@ -4,3 +4,82 @@ h1{
     margin-top: 10vh;
     font-size: 2.5vw;
 }
+
+.Planets img{
+    width: 7vw;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+}
+
+#UserRocket{
+    position: absolute;
+    height: 13vh;
+}
+
+.leftPlanets{
+    position: fixed;
+    left: 15vw;
+}
+
+.rightPlanets{
+    position: fixed;
+    left: 74vw;
+}
+
+#brownPlanet{
+    position: fixed;
+    top: 5vh;
+}
+
+#earthPlanet{
+    position: fixed;
+    top: 23vh;
+    left: 11vw;
+}
+
+#greenPlanet{
+    position: fixed;
+    top: 41vh;
+    left: 8vw;
+}
+
+#moonPlanet{
+    position: fixed;
+    top: 59vh;
+    left: 11vw;
+}
+
+#orangePlanet{
+    position: fixed;
+    top: 77vh;
+}
+
+#purplePlanet img{
+    position: fixed;
+    top: 5vh;
+    width: 8.5vw;
+}
+
+#redPlanet{
+    position: fixed;
+    top: 23vh;
+    left: 78vw;
+}
+
+#brownstripesPlanet{
+    position: fixed;
+    top: 41vh;
+    left: 81vw;
+}
+
+#waterPlanet{
+    position: fixed;
+    top: 59vh;
+    left: 78vw;
+}
+
+#whitePlanet{
+    position: fixed;
+    top: 77vh;
+}
