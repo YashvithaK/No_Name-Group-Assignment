@@ -1,7 +1,7 @@
 h1{
     color: whitesmoke;
     text-align: center;
-    margin-top: 10vh;
+    padding-top: 8vh;
     font-size: 2.5vw;
     font-family: "Helvetica Neue", "Helvetica", Arial;
 }
@@ -245,6 +245,13 @@ button:hover{
     margin-left: 1525px;
 } */
 
+h3{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.2vw;
+
+}
+
 .Planets img{
     width: 7vw;
     height: auto;
@@ -262,6 +269,7 @@ button:hover{
 }
 
 .leftPlanets{
+    position: absolute;
     left: 15vw;
 }
 
@@ -314,4 +322,48 @@ button:hover{
 
 #whitePlanet{
     top: 77vh;
+}
+
+#services{
+    position: absolute;
+    margin-top: 80vh;
+    margin-left: 35vw;
+    padding-bottom: 30vh;
+    color: whitesmoke;
+    text-align: center;
+}
+
+#services h2{
+    font-size: 3vw;
+}
+
+#services p{
+    font-size: 2vw;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow: hidden;
+}
+
+
+#toServices{
+    position: absolute;
+    left: 41.5vw;
+    height: 5vh;
+    width: 15vw;
+    top: 90vh;
+    color: whitesmoke;
+    font-size: 1vw;
+}
+
+.Planets img:hover{
+    width: 8vw;
+}
+
+#purplePlanet img:hover{
+    width: 9.5vw;
 }
