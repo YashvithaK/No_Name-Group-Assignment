@@ -6,6 +6,28 @@ function addListener(){
     const arrow = document.getElementById("toServices");
     rocket.style.top = "45vh";
     rocket.style.left = "47vw";
+
+    //Prevent up and down arrows from scrolling page
+    /*
+    Source of code
+    https://thewebdev.info/2022/05/22/how-to-disable-arrow-key-scrolling-in-users-browser-with-javascript/#:~:text=browser%20with%20JavaScript.-,How%20to%20disable%20arrow%20key%20scrolling%20in%20users%20browser%20with,%22%2C%20%22ArrowRight%22%5D.
+    */
+
+    window.addEventListener(
+      "keydown",
+      (e) => {
+        if (
+          ["Space", "ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(
+            e.code
+          )
+        ) {
+          e.preventDefault();
+        }
+      },
+      false
+    );
+
+
     window.addEventListener('keydown', (event) =>
     {
         calcDistance();
@@ -101,7 +123,7 @@ function calcDistance(){
     planet9Pos = document.getElementById("waterPlanet").getBoundingClientRect();
     planet10Pos = document.getElementById("whitePlanet").getBoundingClientRect();
 
-    if(((rocketPos.left - planet1Pos.left < 80) && (rocketPos.left - planet1Pos.left > -80)) && ((rocketPos.top - planet1Pos.top < 80) && (rocketPos.top - planet1Pos.top > -80))){
+    if(((rocketPos.left - planet1Pos.left < 60) && (rocketPos.left - planet1Pos.left > -60)) && ((rocketPos.top - planet1Pos.top < 60) && (rocketPos.top - planet1Pos.top > -60))){
         overPlanet(planet1);
         atPlanet = 1;
     }else{
@@ -111,7 +133,7 @@ function calcDistance(){
         }
     }
 
-    if(((rocketPos.left - planet2Pos.left < 80) && (rocketPos.left - planet2Pos.left > -80)) && ((rocketPos.top - planet2Pos.top < 80) && (rocketPos.top - planet2Pos.top > -80))){
+    if(((rocketPos.left - planet2Pos.left < 60) && (rocketPos.left - planet2Pos.left > -60)) && ((rocketPos.top - planet2Pos.top < 60) && (rocketPos.top - planet2Pos.top > -60))){
         overPlanet(planet2);
         atPlanet = 2;
     }else{
@@ -121,7 +143,7 @@ function calcDistance(){
         }
     }
 
-    if(((rocketPos.left - planet3Pos.left < 80) && (rocketPos.left - planet3Pos.left > -80)) && ((rocketPos.top - planet3Pos.top < 80) && (rocketPos.top - planet3Pos.top > -80))){
+    if(((rocketPos.left - planet3Pos.left < 60) && (rocketPos.left - planet3Pos.left > -60)) && ((rocketPos.top - planet3Pos.top < 60) && (rocketPos.top - planet3Pos.top > -60))){
         overPlanet(planet3);
         atPlanet = 3;
     }else{
@@ -131,7 +153,7 @@ function calcDistance(){
         }
     }
 
-    if(((rocketPos.left - planet4Pos.left < 80) && (rocketPos.left - planet4Pos.left > -80)) && ((rocketPos.top - planet4Pos.top < 80) && (rocketPos.top - planet4Pos.top > -80))){
+    if(((rocketPos.left - planet4Pos.left < 60) && (rocketPos.left - planet4Pos.left > -60)) && ((rocketPos.top - planet4Pos.top < 60) && (rocketPos.top - planet4Pos.top > -60))){
         overPlanet(planet4);
         atPlanet = 4;
     }else{
@@ -141,7 +163,7 @@ function calcDistance(){
         }
     }
 
-    if(((rocketPos.left - planet5Pos.left < 80) && (rocketPos.left - planet5Pos.left > -80)) && ((rocketPos.top - planet5Pos.top < 80) && (rocketPos.top - planet5Pos.top > -80))){
+    if(((rocketPos.left - planet5Pos.left < 60) && (rocketPos.left - planet5Pos.left > -60)) && ((rocketPos.top - planet5Pos.top < 60) && (rocketPos.top - planet5Pos.top > -60))){
         overPlanet(planet5);
         atPlanet = 5;
     }else{
@@ -151,7 +173,7 @@ function calcDistance(){
         }
     }
 
-    if(((rocketPos.left - planet6Pos.left < 80) && (rocketPos.left - planet6Pos.left > -80)) && ((rocketPos.top - planet6Pos.top < 80) && (rocketPos.top - planet6Pos.top > -80))){
+    if(((rocketPos.left - planet6Pos.left < 60) && (rocketPos.left - planet6Pos.left > -60)) && ((rocketPos.top - planet6Pos.top < 60) && (rocketPos.top - planet6Pos.top > -60))){
         overPlanet6(planet6);
         atPlanet = 6;
     }else{
@@ -161,7 +183,7 @@ function calcDistance(){
         }
     }
 
-    if(((rocketPos.left - planet7Pos.left < 80) && (rocketPos.left - planet7Pos.left > -80)) && ((rocketPos.top - planet7Pos.top < 80) && (rocketPos.top - planet7Pos.top > -80))){
+    if(((rocketPos.left - planet7Pos.left < 60) && (rocketPos.left - planet7Pos.left > -60)) && ((rocketPos.top - planet7Pos.top < 60) && (rocketPos.top - planet7Pos.top > -60))){
         overPlanet(planet7);
         atPlanet = 7;
     }else{
@@ -171,7 +193,7 @@ function calcDistance(){
         }
     }
 
-    if(((rocketPos.left - planet8Pos.left < 80) && (rocketPos.left - planet8Pos.left > -80)) && ((rocketPos.top - planet8Pos.top < 80) && (rocketPos.top - planet8Pos.top > -80))){
+    if(((rocketPos.left - planet8Pos.left < 60) && (rocketPos.left - planet8Pos.left > -60)) && ((rocketPos.top - planet8Pos.top < 60) && (rocketPos.top - planet8Pos.top > -60))){
         overPlanet(planet8);
         atPlanet = 8;
     }else{
@@ -181,7 +203,7 @@ function calcDistance(){
         }
     }
 
-    if(((rocketPos.left - planet9Pos.left < 80) && (rocketPos.left - planet9Pos.left > -80)) && ((rocketPos.top - planet9Pos.top < 80) && (rocketPos.top - planet9Pos.top > -80))){
+    if(((rocketPos.left - planet9Pos.left < 60) && (rocketPos.left - planet9Pos.left > -60)) && ((rocketPos.top - planet9Pos.top < 60) && (rocketPos.top - planet9Pos.top > -60))){
         overPlanet(planet9);
         atPlanet = 9;
     }else{
@@ -191,7 +213,7 @@ function calcDistance(){
         }
     }
 
-    if(((rocketPos.left - planet10Pos.left < 80) && (rocketPos.left - planet10Pos.left > -80)) && ((rocketPos.top - planet10Pos.top < 80) && (rocketPos.top - planet10Pos.top > -80))){
+    if(((rocketPos.left - planet10Pos.left < 60) && (rocketPos.left - planet10Pos.left > -60)) && ((rocketPos.top - planet10Pos.top < 60) && (rocketPos.top - planet10Pos.top > -60))){
         overPlanet(planet10);
         atPlanet = 10;
     }else{
