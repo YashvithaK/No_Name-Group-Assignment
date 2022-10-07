@@ -44,6 +44,11 @@ function addListener(){
                         rocket.style.left = newVal + "vw";
                         rocket.style.transform = "rotate(90deg)";
                         rocket.src = "images/rocketMove.png";
+                    }else{
+                        console.log(event.key);
+                        if(event.key == 'Enter'){
+                            goToProject();
+                        }
                     }
                 }
             }
@@ -199,10 +204,14 @@ function calcDistance(){
 
 function overPlanet(planet){
     planet.style.width = "8vw"; 
+    instruction = document.getElementById("instruction");
+    instruction.innerHTML = "Press Enter";
 }
 
 function leavePlanet(planet){
     planet.style.width = "7vw";
+    instruction = document.getElementById("instruction");
+    instruction.innerHTML = "Use the arrow keys or WASD to move the rocket";
 }
 
 function overPlanet6(planet){
@@ -211,4 +220,41 @@ function overPlanet6(planet){
 
 function leavePlanet6(planet){
     planet.style.width = "8.5vw";
+}
+
+function goToProject(){
+    switch(atPlanet){
+        case 0:
+            break;
+        case 1:
+            location.href = "html/placeholder.html";
+            break;
+        case 2:
+            location.href = "html/placeholder.html";
+            break;
+        case 3:
+            location.href = "html/placeholder.html";
+            break;
+        case 4:
+            location.href = "html/placeholder.html";
+            break;
+        case 5:
+            location.href = "html/placeholder.html";
+            break;
+        case 6:
+            location.href = "html/placeholder.html";
+            break;
+        case 7:
+            location.href = "html/placeholder.html";
+            break;
+        case 8:
+            location.href = "html/placeholder.html";
+            break;
+        case 9:
+            location.href = "html/placeholder.html";
+            break;
+        case 10:
+            location.href = "html/placeholder.html";
+            break;
+    }
 }
