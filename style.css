@@ -344,9 +344,11 @@ html{
     scroll-behavior: smooth;
 }
 
+/*
 body{
     overflow: hidden;
 }
+*/
 
 
 #toServices{
@@ -359,6 +361,7 @@ body{
     font-size: 1vw;
 }
 
+/*
 .Planets img:hover{
     width: 8vw;
 }
@@ -366,6 +369,7 @@ body{
 #purplePlanet img:hover{
     width: 9.5vw;
 }
+*/
 
 .dl-link{
   text-align: center;
