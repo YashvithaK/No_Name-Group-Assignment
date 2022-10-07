@@ -32,7 +32,7 @@ h1{
 .col-1 h1{
     font-size: 54px;
     color: white;
-}  
+}
 
 .col-1 h2{
     font-size: 30px;
@@ -40,7 +40,7 @@ h1{
     font-weight: 100;
     margin: 60px 0 10px;
     margin-left: 120px;
-}   
+}
 
 .col-1 p{
     font-size: 16px;
@@ -61,7 +61,7 @@ h1{
     font-size: 54px;
     color: white;
     margin-left: 50px;
-}  
+}
 
 .col-4 h2{
     font-size: 30px;
@@ -69,7 +69,7 @@ h1{
     font-weight: 100;
     margin: 60px 0 10px;
     margin-left: 70px;
-}   
+}
 
 .col-4 p{
     font-size: 16px;
@@ -189,7 +189,7 @@ button:hover img{
 button:hover{
     width: 160px;
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -213,7 +213,7 @@ button:hover{
 }
 
 .col-2 .prototype{
-    width: 65%; 
+    width: 65%;
 }
 
 .col-2{
@@ -223,7 +223,7 @@ button:hover{
     margin-right: 40px;
 }
 .col-3 .prototype2{
-    width: 65%; 
+    width: 65%;
 }
 
 .col-5 .prototype2{
@@ -269,7 +269,6 @@ h3{
 }
 
 .leftPlanets{
-    position: absolute;
     left: 15vw;
 }
 
@@ -366,4 +365,15 @@ body{
 
 #purplePlanet img:hover{
     width: 9.5vw;
+}
+
+.dl-link{
+  text-align: center;
+  font-size: 1em;
+  font-family: "Helvetica Neue", "Helvetica", Arial;
+  padding-bottom: 10px;
+}
+
+.img-column{
+  flex: 50%;
 }
